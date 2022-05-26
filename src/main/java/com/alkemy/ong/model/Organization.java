@@ -17,8 +17,8 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 
-@SQLDelete(sql = "UPDATE organizations SET softDelete = true WHERE id=?")
-@Where(clause = "softDelete = false")
+@SQLDelete(sql = "UPDATE organizations SET soft_delete = true WHERE id=?")
+@Where(clause = "soft_delete = false")
 
 public class Organization implements Serializable {
 
